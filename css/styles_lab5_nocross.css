@@ -1,0 +1,55 @@
+
+  .simple,
+  .custom {
+      display: flex;
+      flex-direction: column;
+      margin-left: 30px;
+  }
+  
+    .custom input {
+         display: none;  
+    }  
+  
+  .custom span {
+      margin-right: 10px;
+      margin-top: 2px;
+      display: block;
+      position: relative;
+      width: 20px;
+      height: 20px;
+      
+      border: 1px solid #f8ca66;
+      opacity: 0.8;
+      border-radius: 2px;
+  }
+  
+  .custom span:before {
+      content: '\2713'; 
+      position: absolute;
+      top: -5px;
+      right: 1px;
+      color: #f8ca66;
+      opacity: 0;
+      transition: 0.1s;
+  }
+  
+  input:checked + span:before {
+      opacity: 0.8;
+  }
+    
+  .custom label {
+      display: flex;
+  }
+  
+   .simple input[type=checkbox] {
+      width: 20px;
+      height: 18px;
+      border: 1px solid #f8ca66;
+      opacity: 0.8;
+      border-radius: 2px;
+      margin-bottom: 10px;
+      margin-right: 8px;
+  }
+  
+  
+  
